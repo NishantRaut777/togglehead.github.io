@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    background-color:  #7d79b1;
+    color: white;
+}
+
+nav span{
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0px 12px;    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.examination .top-examination-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 22px 0px;
+}
+
+.examination .top-examination-container .vertical-line{
+    border-left: 2px solid grey;
+    height: 150px;
+    
+}
+
+.examination .top-examination-container .common-inner-exam{
+    display: flex;
+    gap: 15px;
+}
+
+.examination .top-examination-container .common-inner-exam i{
+    margin-top: 20px;
+}
+
+.examination .container{
+    max-width: 1120px;
+    margin: auto;
+}
+
+.outer-bottom-examination-container {
+    padding: 30px 0px;
+}
+
+.bottom-examination-container .card-wrapper .card{
+    width: 300px;
+}
+
+.bottom-examination-container .slide-container{
+    margin: 0px 30px;
+    overflow: hidden;
+}
+
+.swiper-navBtn{
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 18px;
+}
+
+.bottom-examination-container .exam-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+    background-color:  #7d79b1;
+}
+
+.bottom-examination-container .exam-details a{
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-examination-container .exam-details .Know-More{
+    cursor: pointer;
+}
+
+.bottom-examination-container .exam-details .Know-More i{
+    margin-left: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet{
+    background-color: #000;
+}
+
+@media screen and (max-width: 768px){
+    .swiper-navBtn{
+        display: none;
+    }
+}
