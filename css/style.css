@@ -41,6 +41,13 @@ button{
     background-color: white;
 }
 
+
+/* Examination css */
+
+.examination{
+    padding: 30px 0px;
+}
+
 .examination .top-examination-container{
     display: flex;
     justify-content: space-evenly;
@@ -126,4 +133,22 @@ button{
     .swiper-navBtn{
         display: none;
     }
+}
+
+
+
+/* Popularity CSS */
+
+.popularity-details-container{
+    display: flex;
+    padding: 30px 125px;
+    background-color: #80808021;
+}
+
+.popularity-details-container .popularity-details{
+    padding: 0px 20px;
+}
+
+.popularity-details-container .popularity-details .popularity-count{
+    font-size: 45px;
 }
