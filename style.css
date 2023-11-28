@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    background-color:  #7d79b1;
+    color: white;
+}
+
+nav span{
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0px 12px;    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: white;
+}
