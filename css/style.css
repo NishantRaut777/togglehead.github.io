@@ -152,3 +152,36 @@ button{
 .popularity-details-container .popularity-details .popularity-count{
     font-size: 45px;
 }
+
+
+
+/* SubScribe css */
+.subscribe{
+    padding: 0px 20px;
+    padding-top: 20px;
+}
+
+.subscribe-container{
+    display: flex;
+}
+
+.subscribe-container .subscribe-details{
+    width: 50%;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscribe-container .subscribe-details .subscribe-now input{
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe-container .subscribe-details .subscribe-now button{
+    background-color: #7d79b1;
+    color: white;
+    cursor: pointer;
+}
