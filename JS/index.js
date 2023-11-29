@@ -28,3 +28,13 @@ var swiper = new Swiper(".slide-container", {
     }
   }
 });
+
+// FAQ Logic 
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+  faq.addEventListener("click", ()=> {
+    faq.classList.toggle("active");
+  })
+});
+

@@ -156,6 +156,56 @@ button{
 }
 
 
+/* FAQ CSS */
+
+.faq-section{
+    padding: 20px 0px;
+}
+
+.faq-section h2{
+    text-align: center;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-container .faq{
+    max-width: 1020px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid grey;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.5rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+}
+
 
 /* SubScribe css */
 .subscribe{
