@@ -240,3 +240,13 @@ button{
 .contact-us .contact-us-container .head-office .common-location i{
     margin-top: 5px;
 }
+
+
+/* Footer CSS */
+footer{
+    background-color: rgb(57, 99, 158);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 2px solid grey;
+}
