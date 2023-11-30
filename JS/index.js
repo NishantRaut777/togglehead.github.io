@@ -29,7 +29,7 @@ var swiper = new Swiper(".slide-container", {
   }
 });
 
-// FAQ Logic 
+// -- FAQ Logic 
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {
@@ -37,4 +37,28 @@ faqs.forEach(faq => {
     faq.classList.toggle("active");
   })
 });
+
+
+// -- Handling navbar
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header-container");
+
+const toggleNavbar = () => {
+    nav_header.classList.toggle("active-header");
+};
+
+mobile_nav.addEventListener("click" , ()=> toggleNavbar());
+
+
+const my_navbar_links = document.querySelectorAll(".navbar-links");
+
+// On click remove active header so that it will be links will be invisible
+const handleClick = () => {
+    nav_header.classList.remove("active-header");
+};
+
+for (let i = 0; i < my_navbar_links.length; i++) {
+    my_navbar_links[i].addEventListener("click", () => handleClick());
+}
 

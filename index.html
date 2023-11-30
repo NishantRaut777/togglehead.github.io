@@ -9,26 +9,46 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
+
+
     <script src="https://kit.fontawesome.com/8b6d18ddea.js" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <span>LOGO</span>
-        <ul>
-            <li><a href="#">Qualifications <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a></li>
-            <li><a href="#">Organizations <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a></li>
-            <li><a href="#">Research & Analysis <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a></li>
-            <li><a href="#">Lorem ipsum <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a></li>
-            <li><a href="#">Lorem ipsum <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a></li>
-            <li><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
-        </ul>
-        
-        <button>Enrollment</button>
-    </nav>
+
+    <!-- header section -->
+    <section class="header-section">
+        <div class="header-container">
+            <h2 class="LOGO" style="cursor: pointer;">LOGO</h2>
+
+            <nav class="my-navbar">
+                <ul>
+                    <li class="navbar-links"><a href="#">Qualifications <i class="fa-solid fa-angle-down"
+                                style="color: #ffffff;"></i></a></li>
+                    <li class="navbar-links"><a href="#">Organizations <i class="fa-solid fa-angle-down"
+                                style="color: #ffffff;"></i></a></li>
+                    <li class="navbar-links"><a href="#">Research & Analysis <i class="fa-solid fa-angle-down"
+                                style="color: #ffffff;"></i></a></li>
+                    <li class="navbar-links"><a href="#" class="loremIpsum-link">Lorem ipsum <i class="fa-solid fa-angle-down"
+                                style="color: #ffffff;"></i></a></li>
+                    <li class="navbar-links"><a href="#" class="loremIpsum-link">Lorem ipsum <i class="fa-solid fa-angle-down"
+                                style="color: #ffffff;"></i></a></li>
+                    <li class="navbar-links"><i class="fa-solid fa-magnifying-glass search-link" style="color: #ffffff;"></i></li>
+                </ul>
+                <button class="enrollment-btn">Enrollment</button>
+            </nav>
+
+            <div class="mobile-navbar-btn">
+                <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+                <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Examination section -->
 
@@ -290,6 +310,7 @@
         &copy 2023 All Rights Reserved. Privacy Policy.
       </footer>
 
+      
       <script src="./JS/swiper-bundle.min.js"></script>
       <script src="./JS/index.js"></script>
 </body>

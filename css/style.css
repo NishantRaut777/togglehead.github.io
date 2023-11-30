@@ -8,38 +8,64 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
+button{
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(57, 99, 158);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Header section */
+
+.header-section{
+    background-color:  rgb(57, 99, 158);
+    padding: 15px 0px;
+}
+
+.header-container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 15px 0px;
-    background-color:  rgb(57, 99, 158);
+}
+
+.header-container .LOGO{
     color: white;
 }
 
-nav span{
-    cursor: pointer;
-    font-weight: bold;
-}
-
-nav ul{
+.header-container nav{
     display: flex;
 }
 
-nav ul li{
+.header-container nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.header-container nav ul li{
     list-style: none;
     padding: 0px 12px;    
 }
 
-nav ul li a{
+.header-container nav ul li a{
     text-decoration: none;
     color: white;
 }
 
-button{
-    padding: 10px 20px;
-    border-radius: 15px;
-    background-color: white;
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon{
+    width: 2.5rem;
+    height: 4rem;
+    margin: 5px;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
 }
 
 
@@ -299,4 +325,89 @@ footer{
     text-align: center;
     color: white;
     border: 2px solid grey;
+}
+
+
+
+
+
+/* ----------------- Responsive CSS ------------------- */
+
+/* Navbar CSS */
+
+@media (max-width: 1045px){
+    nav ul .loremIpsum-link{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    nav .enrollment-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 680px){
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    nav ul .loremIpsum-link{
+        display: block;
+    }
+
+    .my-navbar .search-link{
+        display: none;
+    }
+
+    .my-navbar{
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background: rgb(57, 99, 158);
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .my-navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .active-header .my-navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active-header .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active-header .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    .header-container .mobile-navbar-btn i{
+        height: 32px;
+    }
 }
