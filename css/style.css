@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid #f00 !important; */
 }
 
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 button{
@@ -14,6 +16,10 @@ button{
     color: rgb(57, 99, 158);
     border-radius: 8px;
     cursor: pointer;
+}
+
+hr{
+    margin: 40px 0px;
 }
 
 
@@ -244,6 +250,7 @@ button{
 
 .subscribe-container{
     display: flex;
+    justify-content: space-around;
 }
 
 .subscribe-container .subscribe-details{
@@ -267,6 +274,13 @@ button{
     cursor: pointer;
 }
 
+/* .subscribe-container .subscribe-image{
+    padding: 0px 79px;
+} */
+
+.subscribe-container .subscribe-image img{
+    width: 378px;
+}
 
 /* Contact us CSS */
 .contact-us{
@@ -495,5 +509,27 @@ footer{
 @media (max-width: 440px){
     .faq-container .faq{
         max-width: 300px;
+    }
+}
+
+
+
+/* Subscribe CSS */
+
+@media (max-width: 1030px){
+    .subscribe-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subscribe-container .subscribe-details{
+        padding: 80px 0px;
+        width: 60%;
+    }
+
+    .subscribe-container .subscribe-details .subscribe-now input{
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
