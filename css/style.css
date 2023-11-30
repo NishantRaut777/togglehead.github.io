@@ -181,6 +181,9 @@ button{
     font-size: 45px;
 }
 
+.popularity-details-container .popularity-details .plus-symbol{
+    font-size: 45px;
+}
 
 /* FAQ CSS */
 
@@ -430,5 +433,29 @@ footer{
 
     .examination .top-examination-container .vertical-line{
         display: none;
+    }
+}
+
+
+/* Popularity CSS */
+
+@media (max-width: 1040px){
+    .popularity-section{
+        font-size: 0.9rem;
+    }
+
+    .popularity-details-container {
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width: 850px){
+    .popularity-details-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .popularity-details-container .popularity-details{
+        margin-bottom: 20px;
     }
 }

@@ -62,3 +62,27 @@ for (let i = 0; i < my_navbar_links.length; i++) {
     my_navbar_links[i].addEventListener("click", () => handleClick());
 }
 
+
+
+// --- Handling popularity count
+
+let popularityCounts = document.querySelectorAll(".popularity-count");
+
+let interval = 5000;
+
+popularityCounts.forEach((popularityCount) => {
+  let startValue = 0;
+  let endValue = parseInt(popularityCount.getAttribute("data-val"));
+
+  let duration = Math.floor(interval / endValue);
+
+  let counter = setInterval(() => {
+    startValue += 1;
+    popularityCount.textContent = startValue;
+
+    if(startValue == endValue){
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
