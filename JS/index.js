@@ -1,4 +1,33 @@
-var swiper = new Swiper(".slide-container", {
+var swiper1 = new Swiper('.swiper-1', {
+  // Optional parameters
+  direction: 'vertical',
+  effect: "fade",
+  loop: true,
+  
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-1',
+  },
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next-1',
+    prevEl: '.swiper-button-prev-1',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar-1',
+  },
+});
+
+var swiper2 = new Swiper(".slide-container", {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
