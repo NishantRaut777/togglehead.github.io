@@ -121,6 +121,14 @@ hr{
     padding: 30px 100px;
 }
 
+.swiper-1 .swiper-button-prev-1{
+    opacity: 0;
+}
+
+.swiper-1 .swiper-button-next-1{
+    opacity: 0;
+}
+
 
 /* Examination css */
 
