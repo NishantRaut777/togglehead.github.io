@@ -5,6 +5,11 @@
     /* outline: 1px solid #f00 !important; */
 }
 
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
